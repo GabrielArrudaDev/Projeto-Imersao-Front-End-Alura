@@ -1,5 +1,13 @@
 # Imersão Front End Alura
 
+## Setup do projeto
+
+* Instalar Node 20
+* executar `npm install`
+* executar a API rodando `npm run iniciarApi`
+
+## Outras notas
+
 ```console
 json-server --watch api-artists/artists.json --port 3000
 ```
@@ -26,3 +34,5 @@ exemplo:
 
 npm uninstall -g json-server@0.17.4
 ```
+
+Projeto criado usando node versâo 20+
