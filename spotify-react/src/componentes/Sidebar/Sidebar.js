@@ -1,6 +1,7 @@
 import './Sidebar.css';
 import logoSpotify from '../../assets/icons/logo-spotify.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faHome, faSearch, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
@@ -28,13 +29,13 @@ const Sidebar = () => {
                 </ul>
             </nav>
             <div className="library">
-                <div className="library__content">
-                    <button className="library__button">
-                        <span className="fa fas fa-book"></span>
-                        <span>Sua biblioteca</span>
-                    </button>
-                    <span className="fa fa-plus"></span>
-                </div>
+            <div className="library__content">
+                <button className="library__button">
+                    <FontAwesomeIcon icon={faBook} />
+                    <span>Sua biblioteca</span>
+                </button>
+                <FontAwesomeIcon icon={faPlus} />
+            </div>
                 <section className="section-playlist">
                     <div className="section-playlist__content">
                         <span className="text title">Crie sua primeira playlist</span>

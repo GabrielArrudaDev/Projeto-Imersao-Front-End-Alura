@@ -7,6 +7,13 @@
     width:300px;
 }
 
+.sidebar button:hover{
+    color: white;
+}
+.sidebar a:hover{
+    color: white;
+}
+
 .sidebar__navigation{
     background-color: #121212;
     border-radius:8px;
@@ -17,7 +24,6 @@
     background: #121212;
     display:flex;
     border-radius:8px ;
-    padding:16px 0 0 16px;
 }
 
 .sidebar__navigation .logo img{
@@ -25,24 +31,23 @@
 }
 
 .sidebar nav ul{
+    
+    list-style: none;
     margin-top: 20px;
     padding:0 20px 10px 20px;
 }
 
 .sidebar ul li{
     padding: 10px 0;
-    list-style: none;
 }
 
 .sidebar nav ul li a{
+    display: flex;
+    gap: 20px;
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
-}
-
-.sidebar nav ul li a span{
-    margin-right: 10px;
+    font-size: 16px;
 }
 
 .library{
@@ -56,6 +61,7 @@
     font-weight: 600;
     font-size:14px;
     margin-top: 10px;
+    
 }
 
 .library .library__content{
@@ -72,12 +78,13 @@
     font-size: 14px;
     font-weight: 700;
     text-align: center;
+    align-items: center;
     text-decoration: none;
     text-transform: none;
     padding:20px 10px;
 }
 
-.library .library__button .fa{
+.library .library__button .fa-book{
     font-size:20px;
     font-weight: 300;
     color:#b3b3b3;
@@ -160,12 +167,47 @@
     color:#FFF;
     font-weight: bold;
     cursor:pointer;
-    width: 180px;
+    width: 170px;
     margin:8px;
     padding:8px;
     border-radius:20px;
 }
 
-.languages .languages__button span{
-    margin-right: 10px;
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
